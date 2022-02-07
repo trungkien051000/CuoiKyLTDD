@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+    <RelativeLayout
+        android:id="@+id/signin_layout2_1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_signup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_back" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:text="Đăng ký"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_Pass"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/signin_layout2_1"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:text="Tạo mật khẩu"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:textColor="@android:color/white"
+        android:inputType="textPassword"
+        android:id="@+id/edt_Pass"
+        android:textSize="20sp"
+        android:textColorHint="@android:color/darker_gray"
+        android:hint="Mật khẩu"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/tv_Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/ic_eye_signin"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/edt_Pass"
+        android:layout_below="@id/tv_Pass"
+        android:src="@drawable/icon_eye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_next2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:text="Tiếp theo"
+        android:background="@drawable/btn_signin"
+        android:layout_centerInParent="true"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity3"
+    android:background="#D9CDCD">
+
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_chevron_left_24" />
+    <TextView
+        android:id="@+id/chinhsuahoso1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chỉnh sửa hồ sơ"
+        android:textSize="25dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        />
+
+        <Button
+            android:id="@+id/donebtn"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="295dp"
+            android:layout_marginTop="10dp"
+            android:text="Hoàn tất"
+            android:textAllCaps="false"
+            android:textSize="14dp"
+            android:background="@drawable/button1_bg"
+            android:textColor="@color/black"
+            android:padding="1dp"/>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/avatar1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="100dp"
+    android:layout_below="@id/chinhsuahoso1"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="130dp"
+    >
+    <ImageView
+        android:id="@+id/img_edit_hoso"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"/>
+</androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_sua"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/button1_bg"
+        android:backgroundTint="#F1ECEC"
+        android:padding="5dp"
+        android:text="Sửa"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_sua"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
+        android:text="Tên"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/hoangkhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ten"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="5dp"
+        android:text="HoangKhong"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/gioithieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hoangkhong"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
+        android:text="Giới thiệu"
+        android:textSize="22dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/themtieusu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gioithieu"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="5dp"
+        android:text="Thêm tiểu sử ngắn"
+        android:textColor="#A8A4A4"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/trangweb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/themtieusu"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
+        android:text="Website"
+        android:textSize="22dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/themwebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trangweb"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="5dp"
+        android:text="Thêm liên kết đến trang web của bạn"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="#A8A4A4"/>
+    <TextView
+        android:id="@+id/tennguoidung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/themwebsite"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
+        android:text="Tên người dùng"
+        android:textSize="22dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/hoangkhong98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tennguoidung"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="5dp"
+        android:text="hoangkhong98"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="30dp"
+            android:elevation="2dp"
+            android:background="@drawable/bg_bottomnavigation"
+            app:labelVisibilityMode="unlabeled"
+            app:itemIconSize="30dp"
+            app:itemRippleColor="@android:color/transparent"
+            app:itemIconTint="@color/item_selector"
+            app:menu="@menu/menu_bottom_navigation" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

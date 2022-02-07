@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+    <RelativeLayout
+        android:id="@+id/signin_layout5_1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_signup4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_back" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:text="Chọn quốc gia của bạn"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/signin_layout5_1"
+        android:id="@+id/tv_xinchao"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="Chúng tôi muốn chắc chắn tìm được những ý tưởng hay nhất cho bạn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_done"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_xinchao"
+        android:id="@+id/spnQuocgia"
+        android:layout_width="350dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btn_next5"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_signin"
+        android:text="Tiếp theo"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

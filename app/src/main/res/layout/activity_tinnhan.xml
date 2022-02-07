@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThongbaoActivity"
+    android:background="#D9CDCD">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <Button
+            android:id="@+id/capnhat"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_tinnhan"
+            android:text="Cập nhật"
+            android:textColor="@color/black"
+            />
+        <Button
+            android:id="@+id/tinnhan"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_capnhat"
+            android:gravity="center"
+            android:text="Tin nhắn"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/viet"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/top">
+    <Button
+        android:id="@+id/tinnhanmoi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:paddingStart="13dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_btn_viet"
+        android:drawableStart="@drawable/ic_baseline_create_24"/>
+    <TextView
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Tin nhắn mới"/>
+
+</LinearLayout>
+   <RelativeLayout
+       android:layout_marginStart="20dp"
+       android:layout_marginTop="15dp"
+       android:layout_marginBottom="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/viet">
+       <Button
+           android:id="@+id/btn_ten"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:background="@drawable/custom_tn"
+           android:textStyle="bold"
+           android:textSize="20sp"
+           android:text="t"/>
+       <TextView
+           android:id="@+id/tk"
+           android:layout_toEndOf="@id/btn_ten"
+           android:layout_marginStart="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/black"
+           android:text="Phamthutrang280200@gmail.com"/>
+       <TextView
+           android:id="@+id/ln"
+           android:layout_toEndOf="@id/btn_ten"
+           android:layout_below="@id/tk"
+           android:layout_marginStart="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Bạn đã gửi 1 tin nhắn"/>
+       <TextView
+           android:layout_toEndOf="@id/ln"
+          android:layout_below="@id/tk"
+           android:layout_marginStart="15dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="1 tuần"/>
+
+       <ImageButton
+           android:layout_width="20dp"
+           android:layout_height="40dp"
+           android:layout_marginStart="10dp"
+           android:layout_toEndOf="@id/tk"
+           android:adjustViewBounds="true"
+           android:scaleType="fitCenter"
+           android:src="@drawable/hinh1"
+           android:background="@drawable/cus_hatn"
+           />
+   </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="30dp"
+            android:elevation="2dp"
+            android:background="@drawable/bg_bottomnavigation"
+            app:labelVisibilityMode="unlabeled"
+            app:itemIconSize="30dp"
+            app:itemRippleColor="@android:color/transparent"
+            app:itemIconTint="@color/item_selector"
+            app:menu="@menu/menu_bottom_navigation" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</RelativeLayout>

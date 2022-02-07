@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D9CDCD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:id="@+id/edt_timkiem"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_search"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableEnd="@drawable/ic_camera"
+            android:hint="Tìm kiếm"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColorHint="#BCB7B7"
+            android:textSize="25sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/edt_timkiem"
+            android:background="@drawable/btn_done"
+            android:text="Tìm kiếm"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/edt_timkiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Ý tưởng dành cho bạn"
+            android:textColor="#626060"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="191dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/img"
+            android:gravity="center"
+            android:text="Nghệ thuật về môi"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBongHoaCoDon"
+            android:layout_width="191dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:background="@drawable/img_1"
+            android:gravity="center"
+            android:text="Bông hoa cô đơn"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@+id/tv1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:id="@+id/tv3"
+            android:layout_width="191dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/img_2"
+            android:text="Kiến dương"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_toRightOf="@id/tv3"
+            android:layout_below="@id/tvBongHoaCoDon"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:id="@+id/tv4"
+            android:layout_width="191dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/img_3"
+            android:text="Trang sức"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#626060"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Phổ biến dành cho bạn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="191dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/img_6"
+            android:gravity="center"
+            android:text="Hình xăm"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="191dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv7"
+            android:background="@drawable/img_7"
+            android:gravity="center"
+            android:text="One Piece"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="191dp"
+            android:layout_height="91dp"
+            android:layout_below="@+id/tv7"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/img_8"
+            android:gravity="center"
+            android:text="Mèo"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="191dp"
+            android:layout_height="91dp"
+            android:layout_below="@id/tv8"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv9"
+            android:background="@drawable/img_9"
+            android:gravity="center"
+            android:text="Cáo Fennec"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="30dp"
+            android:elevation="2dp"
+            android:background="@drawable/bg_bottomnavigation"
+            app:labelVisibilityMode="unlabeled"
+            app:itemIconSize="30dp"
+            app:itemRippleColor="@android:color/transparent"
+            app:itemIconTint="@color/item_selector"
+            app:menu="@menu/menu_bottom_navigation" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

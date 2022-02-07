@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#D9CDCD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/Anh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/anh">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/head_baocaoghim">
+
+        <ImageButton
+
+            android:id="@+id/btnClose"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_close"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Nhận xét"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnUser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/btnClose"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/avatar_user"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/txtUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnClose"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/btnUser"
+            android:paddingLeft="20dp"
+            android:text="Bạch Trung Kiên"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnClose"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/txtUser"
+            android:paddingLeft="20dp"
+            android:text="tháng 10,12"
+            android:textColor="#707070"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtUser"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/btnUser"
+            android:paddingLeft="20dp"
+            android:text="Hoa cu đơn 😁😁"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/heart"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_below="@id/txtCmt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/btnUser"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/heart"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/luot_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCmt"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/heart"
+            android:paddingLeft="10dp"
+            android:text="17"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCmt"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/luot_like"
+            android:paddingLeft="10dp"
+            android:text="Trả lời"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnbaocao"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/txtCmt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/reply"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_3cham"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/like"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/txtCmt"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/btnbaocao"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/like"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCmt"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/like"
+            android:paddingLeft="20dp"
+            android:text="Hữu ích 2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_baocao_cmt">
+
+        <TextView
+            android:id="@+id/txtbaocao_cmt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30dp"
+            android:text="Báo cáo"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtchan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtbaocao_cmt2"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="8dp"
+            android:text="Chặn người dùng"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDong_cmt2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/custom_search"
+            android:text="Đóng"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

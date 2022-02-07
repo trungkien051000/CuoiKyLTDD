@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SignInSignUp.LoginLayout1Activity"
+    android:background="@android:color/black">
+    <RelativeLayout
+        android:id="@+id/login_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/ic_X_Login"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/icon_x" />
+        <TextView
+            android:textSize="22sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Đăng nhập"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_Facebook"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:text="Tiếp tục bằng Facebook"
+        android:background="@drawable/btn_facebook"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_layout1"
+        android:layout_width="380dp"
+        android:layout_height="60dp"/>
+    <Button
+        android:id="@+id/btn_Google"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:text="Tiếp tục bằng Google"
+        android:background="@drawable/btn_google"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_Facebook"
+        android:layout_width="380dp"
+        android:layout_height="60dp"/>
+    <TextView
+        android:id="@+id/tv_Hoac"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:text="HOẶC"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_Google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:id="@+id/login_layout1_2"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/tv_Hoac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_email1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên đăng nhập"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edt_Email_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_email1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-1dp"
+            android:hint="Nhập tên đăng nhập của bạn"
+            android:textColor="@android:color/white"
+            android:textColorHint="#919191" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/login_layout1_3"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/login_layout1_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_pass1"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text="Mật khẩu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edt_Pass_Login"
+            android:password="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="#919191"
+            android:hint="Nhập mật khẩu của bạn"
+            android:layout_below="@id/tv_pass1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/ic_eye_Login"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_eye"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:text="Đăng nhập"
+        android:background="@drawable/btn_signin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_layout1_3"
+        android:layout_width="380dp"
+        android:layout_height="60dp"/>
+    <TextView
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_login"
+        android:gravity="center"
+        android:id="@+id/tv_chinhsach"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_forgetPass"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="Quên mật khẩu?"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_chinhsach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="OnClick" />
+    <TextView
+        android:id="@+id/tv_iCloud"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="Sử dụng iCloud Keychain"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_forgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

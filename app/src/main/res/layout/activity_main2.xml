@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#D9CDCD"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+
+    <ImageButton
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_clear_24" />
+
+    <TextView
+        android:id="@+id/caidat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="10dp"
+        android:text="Cài đặt"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/thongtincanhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clear"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="Thông tin cá nhân"
+        android:textColor="#AAA4A4"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/chinhsuahoso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thongtincanhan"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Chỉnh sửa hồ sơ"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <ImageButton
+        android:id="@+id/btnchinhsuahoso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thongtincanhan"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_chevron_right_24" />
+
+    <TextView
+        android:id="@+id/caidattaikhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chinhsuahoso"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Cài đặt tài khoản"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <ImageButton
+        android:id="@+id/btncaidattaikhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chinhsuahoso"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_chevron_right_24" />
+
+    <TextView
+        android:id="@+id/quyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/caidattaikhoan"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Quyền"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caidattaikhoan"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_chevron_right_24" />
+
+    <TextView
+        android:id="@+id/thongbao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quyen"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Thông báo"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quyen"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_chevron_right_24" />
+
+    <TextView
+        android:id="@+id/quyenriengtuvadulieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thongbao"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Quyền riêng tư và dữ liệu"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thongbao"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_chevron_right_24" />
+
+    <TextView
+        android:id="@+id/bodieuchinhbangtin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quyenriengtuvadulieu"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Bộ điều chỉnh bảng tin"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/hanhdong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bodieuchinhbangtin"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="Hành động"
+        android:textColor="#AAA4A4"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/themtaikhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hanhdong"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Thêm tài khoản"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/dangxuat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/themtaikhoan"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Đăng xuất"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/nhantrogiup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dangxuat"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Nhận trợ giúp"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/xemdieukhoanvaquyenriengtu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nhantrogiup"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Xem điều khoản và quyền riêng tư"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="30dp"
+            android:background="@drawable/bg_bottomnavigation"
+            android:elevation="2dp"
+            app:itemIconSize="30dp"
+            app:itemIconTint="@color/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/menu_bottom_navigation" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

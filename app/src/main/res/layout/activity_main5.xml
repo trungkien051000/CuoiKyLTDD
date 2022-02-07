@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity5"
+    android:background="#D9CDCD">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/logo"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:text="HoangKhong"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <ImageButton
+        android:id="@+id/imgb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_more_horiz_24" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/img1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#C1BBBB"
+        app:cardCornerRadius="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:background="#C1BBBB"
+            android:src="@drawable/ic_baseline_search_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="7dp"
+            android:text="Tìm kiếm ghim của bạn"
+            android:textSize="18dp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_marginLeft="323dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_sort_24" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_add_24" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/cv1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="15dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img2"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv3"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/cv1"
+        android:layout_marginLeft="213dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="15dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img4"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv4"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/cv2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="15dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img1"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv5"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/cv2"
+        android:layout_marginLeft="213dp"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="15dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img5"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Tất cả các ghim"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:text="12 ghim"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv2"
+        android:text="[Linh tinh]"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="213dp"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv3"
+        android:text="7 ghim"
+        android:layout_marginLeft="213dp"
+        />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="[Cute]"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv4"
+        android:text="5 ghim"
+        android:layout_marginLeft="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv5"
+        android:layout_marginLeft="213dp"
+        android:layout_marginTop="10dp"
+        android:text="[Stupid]"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv5"
+        android:text="2 ghim"
+        android:layout_marginLeft="213dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layout_bg">
+
+        <TextView
+            android:id="@+id/hoso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="20dp"
+            android:text="Hồ sơ"
+            android:textColor="#A8A4A4"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/caidat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hoso"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="20dp"
+            android:text="Cài đặt"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/saocheplienkethoso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/caidat1"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:text="Sao chép liên kết hồ sơ"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/dong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saocheplienkethoso"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_bg"
+            android:text="Đóng"
+            android:textAllCaps="false"
+            android:textSize="17dp" />
+    </RelativeLayout>
+</RelativeLayout>

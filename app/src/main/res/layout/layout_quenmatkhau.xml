@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SignInSignUp.LayoutQuenmatkhauActivity"
+    android:background="#D9CDCD">
+
+    <RelativeLayout
+
+        android:id="@+id/layout_quenmatkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/back_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Đặt lại Mật khẩu"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/layout_quenmatkhau"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_timTK"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:text="Chúng ta hãy tìm  tài khoản Pinterfake của bạn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_quenmatkhau"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="Email, tên hoặc tên người dùng của bạn là gì?"
+            android:gravity="center"
+            android:layout_below="@id/tv_timTK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <FrameLayout
+            android:id="@+id/fl_layout"
+            android:layout_below="@id/tv_quenmatkhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+
+                android:background="@drawable/bg_timkiem"
+                android:hint="Tìm kiếm"
+                android:paddingLeft="40dp"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tv_quenmatkhau"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+            </EditText>
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_search_notchoose"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </FrameLayout>
+        <Button
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:text="Tìm kiếm"
+            android:background="@drawable/btn_done"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/fl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

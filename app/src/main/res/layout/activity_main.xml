@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SignInSignUp.MainActivity"
+    android:background="@android:color/black"
+    >
+
+    <RelativeLayout
+
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/img_1"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp">
+            <ImageView
+
+                android:src="@drawable/dog1"
+                android:layout_width="145dp"
+                android:layout_height="149dp"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/img_2"
+            android:layout_toRightOf="@id/img_1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp">
+
+            <ImageView
+                android:src="@drawable/dog2"
+                android:layout_width="229dp"
+                android:layout_height="240dp"
+                 />
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/img_3"
+            android:layout_below="@id/img_1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp">
+
+            <ImageView
+                android:src="@drawable/dog3"
+                android:layout_width="128dp"
+                android:layout_height="160dp"
+                 />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+        android:id="@+id/img_4"
+        android:layout_toRightOf="@id/img_3"
+        android:layout_below="@id/img_2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp">
+
+        <ImageView
+            android:src="@drawable/dog4"
+            android:layout_width="220dp"
+            android:layout_height="145dp"
+            />
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/img_5"
+            android:layout_below="@id/img_3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp">
+
+            <ImageView
+                android:src="@drawable/dog5"
+                android:layout_width="129dp"
+                android:layout_height="170dp"
+                />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+      >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="130dp"
+            android:layout_marginBottom="130dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Chào mừng bạn đến với Pinterfake"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:id="@+id/btn_signin"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_welcome"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_signin"
+            android:text="Đăng ký"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <Button
+            android:background="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:text="Đăng nhập"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_below="@id/btn_signin"
+            android:id="@+id/btn_signup"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityAccount"
+    android:background="#D9CDCD">
+
+     <androidx.cardview.widget.CardView
+     android:id="@+id/img1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     app:cardCornerRadius="100dp"
+     android:layout_marginTop="10dp"
+     android:layout_marginLeft="15dp">
+     <ImageView
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:src="@drawable/logo"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:text="HoangKhong"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        />
+
+    <ImageButton
+        android:id="@+id/imgb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_more_horiz_24" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/img1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#C1BBBB"
+        app:cardCornerRadius="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:background="#C1BBBB"
+            android:src="@drawable/ic_baseline_search_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="7dp"
+            android:text="Tìm kiếm ghim của bạn"
+            android:textSize="18dp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_marginLeft="323dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_sort_24" />
+    <ImageButton
+        android:id="@+id/imgButton_Upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="360dp"
+        android:src="@drawable/ic_baseline_add_24"
+        android:background="@android:color/transparent"/>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cv2"
+    android:layout_width="180dp"
+    android:layout_height="120dp"
+    android:layout_below="@+id/cv1"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="25dp"
+    android:backgroundTint="@color/black"
+    app:cardCornerRadius="15dp">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img2"
+        />
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv3"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/cv1"
+        android:layout_marginLeft="213dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="15dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img4"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv4"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/cv2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="15dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img1"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv5"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/cv2"
+        android:layout_marginLeft="213dp"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="15dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img5"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Tất cả các ghim"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:text="12 ghim"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv2"
+        android:text="[Linh tinh]"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="213dp"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv3"
+        android:text="7 ghim"
+        android:layout_marginLeft="213dp"
+        />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="[Cute]"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv4"
+        android:text="5 ghim"
+        android:layout_marginLeft="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv5"
+        android:layout_marginLeft="213dp"
+        android:layout_marginTop="10dp"
+        android:text="[Stupid]"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv5"
+        android:text="2 ghim"
+        android:layout_marginLeft="213dp"
+        />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="30dp"
+            android:elevation="2dp"
+            android:background="@drawable/bg_bottomnavigation"
+            app:labelVisibilityMode="unlabeled"
+            app:itemIconSize="30dp"
+            app:itemRippleColor="@android:color/transparent"
+            app:itemIconTint="@color/item_selector"
+            app:menu="@menu/menu_bottom_navigation" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

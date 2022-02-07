@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pinterest">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ListSearchActivity"
+            android:exported="false" />
+        <activity android:name=".UploadPictureActivity" />
+        <activity
+            android:name=".TrangcanhanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GhimActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CaidatActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NoidungTNActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TinnhanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ThongbaoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Share_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Baocao_Nhanxet2_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Baocao_Nhanxet_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Tai_Anh_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Bao_Cao_Spam_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Bao_Cao_GhimActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cmt_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Tuy_chon_khac_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".AnhActivity"
+            android:exported="true" />
+        <activity
+            android:name=".YTuongActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainTimKiemActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity5"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity4"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityAccount"
+            android:exported="true" />
+        <activity android:name=".LayoutTrangchu1Activity"></activity>
+        <activity android:name="SignInSignUp.LayoutQuenmatkhauActivity" />
+        <activity android:name="SignInSignUp.LoginLayout1Activity" />
+        <activity android:name=".LayoutTrangchuActivity"></activity>
+        <activity android:name="SignInSignUp.SignupLayout6Activity" />
+        <activity android:name="SignInSignUp.SignupLayout5Activity" />
+        <activity android:name="SignInSignUp.SignupLayout4Activity" />
+        <activity android:name="SignInSignUp.SignupLayout3Activity" />
+        <activity android:name="SignInSignUp.SignupLayout2Activity" />
+        <activity android:name="SignInSignUp.SignupLayout1Activity" />
+        <activity android:name="SignInSignUp.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#D9CDCD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/Anh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/anh">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/head_baocaoghim">
+
+        <TextView
+            android:id="@+id/txtBaocao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Báo cáo Nhận xét"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:id="@+id/rllo_Baocao_Nhanxet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txtTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Spam"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle1"
+                android:paddingLeft="20dp"
+                android:text="Bài đăng gây nhiều hiểu lầm hoặc lặp lại"
+                android:textColor="#707070"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_next"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Bình luận mang tính tình dục"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle2"
+                android:paddingLeft="20dp"
+                android:text="Nội dung khiêu dâm"
+                android:textColor="#707070"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_next"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txtTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Tự hành xác"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle3"
+                android:paddingLeft="20dp"
+                android:text="Rối loạn ăn uống, tự hành xác, tự sát"
+                android:textColor="#707070"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_next"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTitle4"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Thông tin sai lệch"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle4"
+                android:paddingLeft="20dp"
+                android:text="Thông tin sai lệch về sức khoẻ hoặc thuyết âm mưu"
+                android:textColor="#707070"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_next"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTitle5"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Hoạt động thù địch"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle5"
+                android:paddingLeft="20dp"
+                android:text="Định kiến, vơ đũa cả nắm, cổ súy sự thưởng đẳng của người da trắng, tục tĩu"
+                android:textColor="#707070"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_next"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTitle7"
+                android:textStyle="bold"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Quấy rối hoặc vi phạm quyền riêng tư"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle7"
+                android:paddingLeft="20dp"
+                android:text="Xúc phạm, đe doạ, thông tin nhận dạng cá nhân"
+                android:textColor="#707070"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_next"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTitle8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:text="Hình ảnh bạo lực"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle8"
+                android:paddingLeft="20dp"
+                android:text="Hình ảnh bạo lực hoặc kích động bạo lực"
+                android:textColor="#707070"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_next"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

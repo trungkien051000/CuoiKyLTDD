@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+    <RelativeLayout
+        android:id="@+id/signin_layout4_1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_signup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_back" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:text="Giới tính của bạn là gì?"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/signin_layout4_1"
+        android:id="@+id/tv_xinchao"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="Điều này giúp chúng tôi tìm được cho bạn nội dung phù hợp hơn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_sex1"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin_layout4_1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/btn_sex"
+        android:text="Nam"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_sex2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_sex1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_sex"
+        android:text="Nữ"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_sex3"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_sex2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_sex"
+        android:text="Lựa chọn khác"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <EditText
+        android:textColor="@android:color/white"
+        android:id="@+id/edt_sex"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/btn_sex3"
+        android:textColorHint="#919191"
+        android:hint="Ghi rõ giới tính"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:textColor="@android:color/secondary_text_light_nodisable"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/btn_hoantat"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_done"
+        android:textAllCaps="false"
+        android:text="Hoàn tất"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/edt_sex"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
